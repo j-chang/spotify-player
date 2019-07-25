@@ -1,0 +1,115 @@
+.Player
+  display: flex
+  align-items: center
+  position: fixed
+  bottom: 0
+  height: 80px
+  width: 100%
+  background: rgba(255,255,255,.92)
+  box-shadow: 0 0 16px 0 rgba(0,0,0,.12)
+
+  &-album
+    height: 42px
+    width: 42px
+    background: $color-light-green
+    border-radius: 4px
+    margin-left: 32px
+    cursor: pointer
+    transition: opacity .2s ease
+
+    &:hover
+      opacity: .6
+
+  &-info
+    font-family: $font
+    font-size: 14px
+    letter-spacing: 0.04em
+    margin-left: 14px
+    color: #666
+
+  &-artist
+    margin-bottom: 4px
+    font-weight: 600
+    color: #333
+
+  &-controls
+    display: flex
+    margin: 0 auto 0 auto
+
+  &-playback
+    display: flex
+
+    &-button
+      color: #666
+      font-size: 24px
+      margin: 0 4px 0 4px
+      cursor: pointer
+      padding: 12px
+      border-radius: 50%
+
+      &:hover
+        color: $color-light-green
+
+    .PlayButton
+      background: $color-light-green
+      color: #fff
+      transition: opacity .2s ease
+
+      &:hover
+        opacity: .6
+
+  &-time
+    display: flex
+    align-items: center
+    margin-left: 68px
+
+    &-start, &-end
+      font-family: $font
+      font-size: 12px
+      letter-spacing: 0.04em
+      color: #666
+      margin: 0 8px 0 8px
+
+    &-track
+      -webkit-appearance: none
+      appearance: none
+      outline: none
+      width: 260px
+      height: 4px
+      background: #ddd
+      border-radius: 2px
+
+      &::-webkit-slider-thumb
+        -webkit-appearance: none
+        height: 12px
+        width: 12px
+        background: $color-light-green
+        border-radius: 50%
+        cursor: pointer
+
+  &-volume
+    margin-right: 30px
+    display: flex
+    align-items: center
+
+    i
+      color: #666
+      font-size: 18px
+      margin-right: 12px
+
+    &-slider
+      -webkit-appearance: none
+      appearance: none
+      outline: none
+      width: 130px
+      height: 4px
+      background: #ddd
+      border-radius: 2px
+
+      &::-webkit-slider-thumb
+        -webkit-appearance: none
+        height: 12px
+        width: 12px
+        background: $color-light-green
+        border-radius: 50%
+        cursor: pointer

@@ -1,0 +1,52 @@
+.Nav
+  display: flex
+  align-items: center
+  position: absolute
+  margin-left: 280px
+  height: 88px
+  width: calc(100% - 280px)
+
+  &-search
+    margin-left: 60px
+    background: #fff
+    border-radius: 18px
+    color: #666
+    opacity: .4
+
+    i
+      margin-left: 24px
+
+    &-input
+      outline: none
+      height: 32px
+      width: 240px
+      padding: 0 16px
+      font-family: $font
+      font-size: 14px
+      letter-spacing: 0.04em
+      border: none
+      border-radius: 18px
+      color: inherit
+
+      &::placeholder
+        color: #666
+
+  &-user
+    margin-right: 30px
+    margin-left: auto
+
+    &-avatar
+      height: 44px
+      width: 44px
+      border-radius: 20px
+      background: #fff
+      cursor: pointer
+      overflow: hidden
+      transition: opacity .2s ease
+
+      img
+        width: 100%
+        height: 100%
+
+      &:hover
+        opacity: .8

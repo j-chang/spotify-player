@@ -1,0 +1,4 @@
+node_modules/
+app/dist/bundle.js
+package-lock.json
+.DS_Store
